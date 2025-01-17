@@ -1,0 +1,10 @@
+Command line:
+   P3_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55511
+
+Wed Oct 16 16:00:08 2024
+
+
+ Elaboration Time: 0.359375 sec

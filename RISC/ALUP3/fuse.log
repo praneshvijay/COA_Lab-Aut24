@@ -1,0 +1,89 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/FPGA/ALU/P3_tb_isim_beh.exe" -prj "D:/FPGA/ALU/P3_tb_beh.prj" "work.P3_tb" "work.glbl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/FPGA/ALU/MUX21.v" into library work
+Analyzing Verilog file "D:/FPGA/ALU/MUX41.v" into library work
+Analyzing Verilog file "D:/FPGA/ALU/FA.v" into library work
+Analyzing Verilog file "D:/FPGA/ALU/NOT.v" into library work
+WARNING:HDLCompiler:248 - "D:/FPGA/ALU/NOT.v" Line 29: Block identifier is required on this block
+Analyzing Verilog file "D:/FPGA/ALU/MUX81.v" into library work
+Analyzing Verilog file "D:/FPGA/ALU/ADD.v" into library work
+WARNING:HDLCompiler:248 - "D:/FPGA/ALU/ADD.v" Line 33: Block identifier is required on this block
+Analyzing Verilog file "D:/FPGA/ALU/MUX161.v" into library work
+Analyzing Verilog file "D:/FPGA/ALU/FA3.v" into library work
+Analyzing Verilog file "D:/FPGA/ALU/FA2.v" into library work
+Analyzing Verilog file "D:/FPGA/ALU/COMP2.v" into library work
+Analyzing Verilog file "D:/FPGA/ALU/SUB.v" into library work
+Analyzing Verilog file "D:/FPGA/ALU/MUX321.v" into library work
+Analyzing Verilog file "D:/FPGA/ALU/HAM8.v" into library work
+Analyzing Verilog file "D:/FPGA/ALU/XOR.v" into library work
+WARNING:HDLCompiler:248 - "D:/FPGA/ALU/XOR.v" Line 30: Block identifier is required on this block
+Analyzing Verilog file "D:/FPGA/ALU/SLT.v" into library work
+Analyzing Verilog file "D:/FPGA/ALU/SGT.v" into library work
+Analyzing Verilog file "D:/FPGA/ALU/SELFUNC.v" into library work
+WARNING:HDLCompiler:248 - "D:/FPGA/ALU/SELFUNC.v" Line 44: Block identifier is required on this block
+Analyzing Verilog file "D:/FPGA/ALU/RTST_A32.v" into library work
+WARNING:HDLCompiler:248 - "D:/FPGA/ALU/RTST_A32.v" Line 36: Block identifier is required on this block
+WARNING:HDLCompiler:248 - "D:/FPGA/ALU/RTST_A32.v" Line 43: Block identifier is required on this block
+Analyzing Verilog file "D:/FPGA/ALU/RTST32.v" into library work
+WARNING:HDLCompiler:248 - "D:/FPGA/ALU/RTST32.v" Line 36: Block identifier is required on this block
+WARNING:HDLCompiler:248 - "D:/FPGA/ALU/RTST32.v" Line 43: Block identifier is required on this block
+Analyzing Verilog file "D:/FPGA/ALU/OR.v" into library work
+WARNING:HDLCompiler:248 - "D:/FPGA/ALU/OR.v" Line 30: Block identifier is required on this block
+Analyzing Verilog file "D:/FPGA/ALU/NOR.v" into library work
+WARNING:HDLCompiler:248 - "D:/FPGA/ALU/NOR.v" Line 30: Block identifier is required on this block
+Analyzing Verilog file "D:/FPGA/ALU/LUI.v" into library work
+Analyzing Verilog file "D:/FPGA/ALU/LTST32.v" into library work
+Analyzing Verilog file "D:/FPGA/ALU/INC.v" into library work
+Analyzing Verilog file "D:/FPGA/ALU/HAM32.v" into library work
+Analyzing Verilog file "D:/FPGA/ALU/DEC.v" into library work
+Analyzing Verilog file "D:/FPGA/ALU/AND.v" into library work
+WARNING:HDLCompiler:248 - "D:/FPGA/ALU/AND.v" Line 30: Block identifier is required on this block
+Analyzing Verilog file "D:/FPGA/ALU/REG_BANK.v" into library work
+Analyzing Verilog file "D:/FPGA/ALU/K_ALU.v" into library work
+Analyzing Verilog file "D:/FPGA/ALU/REG_ALU.v" into library work
+Analyzing Verilog file "D:/FPGA/ALU/P3_tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module REG_BANK
+Compiling module FA
+Compiling module ADD(N=32)
+Compiling module NOT(N=32)
+Compiling module COMP2(N=32)
+Compiling module SUB(N=32)
+Compiling module AND(N=32)
+Compiling module OR(N=32)
+Compiling module XOR(N=32)
+Compiling module NOR(N=32)
+Compiling module MUX21
+Compiling module MUX41
+Compiling module MUX81
+Compiling module MUX161
+Compiling module MUX321
+Compiling module LTST32
+Compiling module RTST32
+Compiling module RTST_A32
+Compiling module INC(N=32)
+Compiling module DEC(N=32)
+Compiling module SLT(N=32)
+Compiling module SGT(N=32)
+Compiling module LUI
+Compiling module FA2
+Compiling module FA3
+Compiling module HAM8
+Compiling module ADD(N=6)
+Compiling module HAM32
+Compiling module SELFUNC(N=32)
+Compiling module K_ALU
+Compiling module REG_ALU
+Compiling module P3_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 4 sub-compilation(s) to finish...
+Compiled 33 Verilog Units
+Built simulation executable D:/FPGA/ALU/P3_tb_isim_beh.exe
+Fuse Memory Usage: 32200 KB
+Fuse CPU Usage: 671 ms

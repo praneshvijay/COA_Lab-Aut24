@@ -1,0 +1,35 @@
+xst -intstyle ise -ifn "D:/FPGA/ALU/REG_ALU.xst" -ofn "D:/FPGA/ALU/REG_ALU.syr" 
+xst -intstyle ise -ifn "D:/FPGA/ALU/REG_ALU.xst" -ofn "D:/FPGA/ALU/REG_ALU.syr" 
+xst -intstyle ise -ifn "D:/FPGA/ALU/REG_ALU.xst" -ofn "D:/FPGA/ALU/REG_ALU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc P3_pins.ucf -p xc7a100t-csg324-3 REG_ALU.ngc REG_ALU.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o REG_ALU_map.ncd REG_ALU.ngd REG_ALU.pcf 
+par -w -intstyle ise -ol high -mt off REG_ALU_map.ncd REG_ALU.ncd REG_ALU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml REG_ALU.twx REG_ALU.ncd -o REG_ALU.twr REG_ALU.pcf -ucf P3_pins.ucf 
+bitgen -intstyle ise -f REG_ALU.ut REG_ALU.ncd 
+xst -intstyle ise -ifn "D:/FPGA/ALU/REG_ALU.xst" -ofn "D:/FPGA/ALU/REG_ALU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc P3_pins.ucf -p xc7a100t-csg324-3 REG_ALU.ngc REG_ALU.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o REG_ALU_map.ncd REG_ALU.ngd REG_ALU.pcf 
+par -w -intstyle ise -ol high -mt off REG_ALU_map.ncd REG_ALU.ncd REG_ALU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml REG_ALU.twx REG_ALU.ncd -o REG_ALU.twr REG_ALU.pcf -ucf P3_pins.ucf 
+bitgen -intstyle ise -f REG_ALU.ut REG_ALU.ncd 
+xst -intstyle ise -ifn "D:/FPGA/ALU/REG_ALU.xst" -ofn "D:/FPGA/ALU/REG_ALU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc P3_pins.ucf -p xc7a100t-csg324-3 REG_ALU.ngc REG_ALU.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o REG_ALU_map.ncd REG_ALU.ngd REG_ALU.pcf 
+par -w -intstyle ise -ol high -mt off REG_ALU_map.ncd REG_ALU.ncd REG_ALU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml REG_ALU.twx REG_ALU.ncd -o REG_ALU.twr REG_ALU.pcf -ucf P3_pins.ucf 
+bitgen -intstyle ise -f REG_ALU.ut REG_ALU.ncd 
+xst -intstyle ise -ifn "D:/FPGA/ALU/REG_ALU.xst" -ofn "D:/FPGA/ALU/REG_ALU.syr" 
+xst -intstyle ise -ifn "D:/FPGA/ALU/REG_ALU.xst" -ofn "D:/FPGA/ALU/REG_ALU.syr" 
+xst -intstyle ise -ifn "D:/FPGA/ALU/REG_ALU.xst" -ofn "D:/FPGA/ALU/REG_ALU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc P3_pins.ucf -p xc7a100t-csg324-3 REG_ALU.ngc REG_ALU.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o REG_ALU_map.ncd REG_ALU.ngd REG_ALU.pcf 
+par -w -intstyle ise -ol high -mt off REG_ALU_map.ncd REG_ALU.ncd REG_ALU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml REG_ALU.twx REG_ALU.ncd -o REG_ALU.twr REG_ALU.pcf -ucf P3_pins.ucf 
+bitgen -intstyle ise -f REG_ALU.ut REG_ALU.ncd 
+xst -intstyle ise -ifn "D:/FPGA/ALU/REG_ALU.xst" -ofn "D:/FPGA/ALU/REG_ALU.syr" 
+xst -intstyle ise -ifn "D:/FPGA/ALU/REG_ALU.xst" -ofn "D:/FPGA/ALU/REG_ALU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc P3_pins.ucf -p xc7a100t-csg324-3 REG_ALU.ngc REG_ALU.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o REG_ALU_map.ncd REG_ALU.ngd REG_ALU.pcf 
+par -w -intstyle ise -ol high -mt off REG_ALU_map.ncd REG_ALU.ncd REG_ALU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml REG_ALU.twx REG_ALU.ncd -o REG_ALU.twr REG_ALU.pcf -ucf P3_pins.ucf 
+bitgen -intstyle ise -f REG_ALU.ut REG_ALU.ncd 

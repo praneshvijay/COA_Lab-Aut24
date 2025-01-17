@@ -1,0 +1,19 @@
+xst -intstyle ise -ifn "D:/FPGA/ALU/K_ALU.xst" -ofn "D:/FPGA/ALU/K_ALU.syr" 
+xst -intstyle ise -ifn "D:/FPGA/ALU/K_ALU.xst" -ofn "D:/FPGA/ALU/K_ALU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 K_ALU.ngc K_ALU.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o K_ALU_map.ncd K_ALU.ngd K_ALU.pcf 
+par -w -intstyle ise -ol high -mt off K_ALU_map.ncd K_ALU.ncd K_ALU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml K_ALU.twx K_ALU.ncd -o K_ALU.twr K_ALU.pcf 
+bitgen -intstyle ise -f K_ALU.ut K_ALU.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K_ALU_ucf.ucf -p xc7a100t-csg324-3 K_ALU.ngc K_ALU.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K_ALU_ucf.ucf -p xc7a100t-csg324-3 K_ALU.ngc K_ALU.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o K_ALU_map.ncd K_ALU.ngd K_ALU.pcf 
+par -w -intstyle ise -ol high -mt off K_ALU_map.ncd K_ALU.ncd K_ALU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml K_ALU.twx K_ALU.ncd -o K_ALU.twr K_ALU.pcf -ucf K_ALU_ucf.ucf 
+bitgen -intstyle ise -f K_ALU.ut K_ALU.ncd 
+xst -intstyle ise -ifn "D:/FPGA/ALU/K_ALU.xst" -ofn "D:/FPGA/ALU/K_ALU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K_ALU_ucf.ucf -p xc7a100t-csg324-3 K_ALU.ngc K_ALU.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o K_ALU_map.ncd K_ALU.ngd K_ALU.pcf 
+par -w -intstyle ise -ol high -mt off K_ALU_map.ncd K_ALU.ncd K_ALU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml K_ALU.twx K_ALU.ncd -o K_ALU.twr K_ALU.pcf -ucf K_ALU_ucf.ucf 
+bitgen -intstyle ise -f K_ALU.ut K_ALU.ncd 

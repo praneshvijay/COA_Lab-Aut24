@@ -1,0 +1,1154 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: REG_ALU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "REG_ALU.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "REG_ALU"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : REG_ALU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\FPGA\ALU\MUX21.v" into library work
+Parsing module <MUX21>.
+Analyzing Verilog file "D:\FPGA\ALU\MUX41.v" into library work
+Parsing module <MUX41>.
+Analyzing Verilog file "D:\FPGA\ALU\FA.v" into library work
+Parsing module <FA>.
+Analyzing Verilog file "D:\FPGA\ALU\NOT.v" into library work
+Parsing module <NOT>.
+WARNING:HDLCompiler:248 - "D:\FPGA\ALU\NOT.v" Line 29: Block identifier is required on this block
+Analyzing Verilog file "D:\FPGA\ALU\MUX81.v" into library work
+Parsing module <MUX81>.
+Analyzing Verilog file "D:\FPGA\ALU\ADD.v" into library work
+Parsing module <ADD>.
+WARNING:HDLCompiler:248 - "D:\FPGA\ALU\ADD.v" Line 33: Block identifier is required on this block
+Analyzing Verilog file "D:\FPGA\ALU\MUX161.v" into library work
+Parsing module <MUX161>.
+Analyzing Verilog file "D:\FPGA\ALU\FA3.v" into library work
+Parsing module <FA3>.
+Analyzing Verilog file "D:\FPGA\ALU\FA2.v" into library work
+Parsing module <FA2>.
+Analyzing Verilog file "D:\FPGA\ALU\COMP2.v" into library work
+Parsing module <COMP2>.
+Analyzing Verilog file "D:\FPGA\ALU\SUB.v" into library work
+Parsing module <SUB>.
+Analyzing Verilog file "D:\FPGA\ALU\MUX321.v" into library work
+Parsing module <MUX321>.
+Analyzing Verilog file "D:\FPGA\ALU\HAM8.v" into library work
+Parsing module <HAM8>.
+Analyzing Verilog file "D:\FPGA\ALU\XOR.v" into library work
+Parsing module <XOR>.
+WARNING:HDLCompiler:248 - "D:\FPGA\ALU\XOR.v" Line 30: Block identifier is required on this block
+Analyzing Verilog file "D:\FPGA\ALU\SLT.v" into library work
+Parsing module <SLT>.
+Analyzing Verilog file "D:\FPGA\ALU\SGT.v" into library work
+Parsing module <SGT>.
+Analyzing Verilog file "D:\FPGA\ALU\SELFUNC.v" into library work
+Parsing module <SELFUNC>.
+WARNING:HDLCompiler:248 - "D:\FPGA\ALU\SELFUNC.v" Line 44: Block identifier is required on this block
+Analyzing Verilog file "D:\FPGA\ALU\RTST_A32.v" into library work
+Parsing module <RTST_A32>.
+WARNING:HDLCompiler:248 - "D:\FPGA\ALU\RTST_A32.v" Line 36: Block identifier is required on this block
+WARNING:HDLCompiler:248 - "D:\FPGA\ALU\RTST_A32.v" Line 43: Block identifier is required on this block
+Analyzing Verilog file "D:\FPGA\ALU\RTST32.v" into library work
+Parsing module <RTST32>.
+WARNING:HDLCompiler:248 - "D:\FPGA\ALU\RTST32.v" Line 36: Block identifier is required on this block
+WARNING:HDLCompiler:248 - "D:\FPGA\ALU\RTST32.v" Line 43: Block identifier is required on this block
+Analyzing Verilog file "D:\FPGA\ALU\OR.v" into library work
+Parsing module <OR>.
+WARNING:HDLCompiler:248 - "D:\FPGA\ALU\OR.v" Line 30: Block identifier is required on this block
+Analyzing Verilog file "D:\FPGA\ALU\NOR.v" into library work
+Parsing module <NOR>.
+WARNING:HDLCompiler:248 - "D:\FPGA\ALU\NOR.v" Line 30: Block identifier is required on this block
+Analyzing Verilog file "D:\FPGA\ALU\LUI.v" into library work
+Parsing module <LUI>.
+Analyzing Verilog file "D:\FPGA\ALU\LTST32.v" into library work
+Parsing module <LTST32>.
+Analyzing Verilog file "D:\FPGA\ALU\INC.v" into library work
+Parsing module <INC>.
+Analyzing Verilog file "D:\FPGA\ALU\HAM32.v" into library work
+Parsing module <HAM32>.
+Analyzing Verilog file "D:\FPGA\ALU\DEC.v" into library work
+Parsing module <DEC>.
+Analyzing Verilog file "D:\FPGA\ALU\AND.v" into library work
+Parsing module <AND>.
+WARNING:HDLCompiler:248 - "D:\FPGA\ALU\AND.v" Line 30: Block identifier is required on this block
+Analyzing Verilog file "D:\FPGA\ALU\REG_BANK.v" into library work
+Parsing module <REG_BANK>.
+Analyzing Verilog file "D:\FPGA\ALU\K_ALU.v" into library work
+Parsing module <K_ALU>.
+Analyzing Verilog file "D:\FPGA\ALU\REG_ALU.v" into library work
+Parsing module <REG_ALU>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <REG_ALU>.
+
+Elaborating module <REG_BANK>.
+
+Elaborating module <K_ALU>.
+
+Elaborating module <ADD(N=32)>.
+
+Elaborating module <FA>.
+
+Elaborating module <SUB(N=32)>.
+
+Elaborating module <COMP2(N=32)>.
+
+Elaborating module <NOT(N=32)>.
+
+Elaborating module <AND(N=32)>.
+
+Elaborating module <OR(N=32)>.
+
+Elaborating module <XOR(N=32)>.
+
+Elaborating module <NOR(N=32)>.
+
+Elaborating module <LTST32>.
+
+Elaborating module <MUX321>.
+
+Elaborating module <MUX161>.
+
+Elaborating module <MUX81>.
+
+Elaborating module <MUX41>.
+
+Elaborating module <MUX21>.
+
+Elaborating module <RTST32>.
+
+Elaborating module <RTST_A32>.
+
+Elaborating module <INC(N=32)>.
+
+Elaborating module <DEC(N=32)>.
+
+Elaborating module <SLT(N=32)>.
+
+Elaborating module <SGT(N=32)>.
+
+Elaborating module <LUI>.
+
+Elaborating module <HAM32>.
+
+Elaborating module <HAM8>.
+
+Elaborating module <FA2>.
+
+Elaborating module <FA3>.
+
+Elaborating module <ADD(N=6)>.
+
+Elaborating module <SELFUNC(N=32)>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <REG_ALU>.
+    Related source file is "D:\FPGA\ALU\REG_ALU.v".
+    Found 4-bit register for signal <SRC_REG1>.
+    Found 4-bit register for signal <SRC_REG2>.
+    Found 4-bit register for signal <DEST_REG>.
+    Found 1-bit register for signal <WRT_EN>.
+    Found 16-bit register for signal <OUT>.
+    Found 4-bit register for signal <STATE>.
+    Found 4-bit register for signal <OP_CODE>.
+    Found 5-bit adder for signal <n0054> created at line 64.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  37 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <REG_ALU> synthesized.
+
+Synthesizing Unit <REG_BANK>.
+    Related source file is "D:\FPGA\ALU\REG_BANK.v".
+    Found 576-bit register for signal <n0030[575:0]>.
+    Found 32-bit 18-to-1 multiplexer for signal <REG1_DATA> created at line 58.
+    Found 32-bit 18-to-1 multiplexer for signal <REG2_DATA> created at line 59.
+    Summary:
+	inferred 576 D-type flip-flop(s).
+	inferred  20 Multiplexer(s).
+Unit <REG_BANK> synthesized.
+
+Synthesizing Unit <K_ALU>.
+    Related source file is "D:\FPGA\ALU\K_ALU.v".
+        N = 32
+    Summary:
+	no macro.
+Unit <K_ALU> synthesized.
+
+Synthesizing Unit <ADD_1>.
+    Related source file is "D:\FPGA\ALU\ADD.v".
+        N = 32
+INFO:Xst:3210 - "D:\FPGA\ALU\ADD.v" line 34: Output port <COUT> of the instance <[31].G> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <ADD_1> synthesized.
+
+Synthesizing Unit <FA>.
+    Related source file is "D:\FPGA\ALU\FA.v".
+    Summary:
+Unit <FA> synthesized.
+
+Synthesizing Unit <SUB>.
+    Related source file is "D:\FPGA\ALU\SUB.v".
+        N = 32
+    Summary:
+	no macro.
+Unit <SUB> synthesized.
+
+Synthesizing Unit <COMP2>.
+    Related source file is "D:\FPGA\ALU\COMP2.v".
+        N = 32
+    Summary:
+	no macro.
+Unit <COMP2> synthesized.
+
+Synthesizing Unit <NOT>.
+    Related source file is "D:\FPGA\ALU\NOT.v".
+        N = 32
+    Summary:
+	no macro.
+Unit <NOT> synthesized.
+
+Synthesizing Unit <AND>.
+    Related source file is "D:\FPGA\ALU\AND.v".
+        N = 32
+    Summary:
+	no macro.
+Unit <AND> synthesized.
+
+Synthesizing Unit <OR>.
+    Related source file is "D:\FPGA\ALU\OR.v".
+        N = 32
+    Summary:
+	no macro.
+Unit <OR> synthesized.
+
+Synthesizing Unit <XOR>.
+    Related source file is "D:\FPGA\ALU\XOR.v".
+        N = 32
+    Summary:
+Unit <XOR> synthesized.
+
+Synthesizing Unit <NOR>.
+    Related source file is "D:\FPGA\ALU\NOR.v".
+        N = 32
+    Summary:
+	no macro.
+Unit <NOR> synthesized.
+
+Synthesizing Unit <LTST32>.
+    Related source file is "D:\FPGA\ALU\LTST32.v".
+    Summary:
+	no macro.
+Unit <LTST32> synthesized.
+
+Synthesizing Unit <MUX321>.
+    Related source file is "D:\FPGA\ALU\MUX321.v".
+    Summary:
+	no macro.
+Unit <MUX321> synthesized.
+
+Synthesizing Unit <MUX161>.
+    Related source file is "D:\FPGA\ALU\MUX161.v".
+    Summary:
+	no macro.
+Unit <MUX161> synthesized.
+
+Synthesizing Unit <MUX81>.
+    Related source file is "D:\FPGA\ALU\MUX81.v".
+    Summary:
+	no macro.
+Unit <MUX81> synthesized.
+
+Synthesizing Unit <MUX41>.
+    Related source file is "D:\FPGA\ALU\MUX41.v".
+    Summary:
+	no macro.
+Unit <MUX41> synthesized.
+
+Synthesizing Unit <MUX21>.
+    Related source file is "D:\FPGA\ALU\MUX21.v".
+    Summary:
+	no macro.
+Unit <MUX21> synthesized.
+
+Synthesizing Unit <RTST32>.
+    Related source file is "D:\FPGA\ALU\RTST32.v".
+    Summary:
+	no macro.
+Unit <RTST32> synthesized.
+
+Synthesizing Unit <RTST_A32>.
+    Related source file is "D:\FPGA\ALU\RTST_A32.v".
+    Summary:
+	no macro.
+Unit <RTST_A32> synthesized.
+
+Synthesizing Unit <INC>.
+    Related source file is "D:\FPGA\ALU\INC.v".
+        N = 32
+    Summary:
+	no macro.
+Unit <INC> synthesized.
+
+Synthesizing Unit <DEC>.
+    Related source file is "D:\FPGA\ALU\DEC.v".
+        N = 32
+    Summary:
+	no macro.
+Unit <DEC> synthesized.
+
+Synthesizing Unit <SLT>.
+    Related source file is "D:\FPGA\ALU\SLT.v".
+        N = 32
+    Summary:
+	no macro.
+Unit <SLT> synthesized.
+
+Synthesizing Unit <SGT>.
+    Related source file is "D:\FPGA\ALU\SGT.v".
+        N = 32
+    Summary:
+	no macro.
+Unit <SGT> synthesized.
+
+Synthesizing Unit <LUI>.
+    Related source file is "D:\FPGA\ALU\LUI.v".
+WARNING:Xst:647 - Input <IMM<15:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <LUI> synthesized.
+
+Synthesizing Unit <HAM32>.
+    Related source file is "D:\FPGA\ALU\HAM32.v".
+    Summary:
+	no macro.
+Unit <HAM32> synthesized.
+
+Synthesizing Unit <HAM8>.
+    Related source file is "D:\FPGA\ALU\HAM8.v".
+    Summary:
+	no macro.
+Unit <HAM8> synthesized.
+
+Synthesizing Unit <FA2>.
+    Related source file is "D:\FPGA\ALU\FA2.v".
+    Summary:
+	no macro.
+Unit <FA2> synthesized.
+
+Synthesizing Unit <FA3>.
+    Related source file is "D:\FPGA\ALU\FA3.v".
+    Summary:
+	no macro.
+Unit <FA3> synthesized.
+
+Synthesizing Unit <ADD_2>.
+    Related source file is "D:\FPGA\ALU\ADD.v".
+        N = 6
+INFO:Xst:3210 - "D:\FPGA\ALU\ADD.v" line 34: Output port <COUT> of the instance <[5].G> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <ADD_2> synthesized.
+
+Synthesizing Unit <SELFUNC>.
+    Related source file is "D:\FPGA\ALU\SELFUNC.v".
+        N = 32
+    Summary:
+	no macro.
+Unit <SELFUNC> synthesized.
+
+Synthesizing Unit <mod_5u_2u>.
+    Related source file is "".
+    Found 7-bit adder for signal <GND_32_o_b[1]_add_1_OUT> created at line 0.
+    Found 6-bit adder for signal <GND_32_o_b[1]_add_3_OUT> created at line 0.
+    Found 5-bit adder for signal <a[4]_b[1]_add_5_OUT> created at line 0.
+    Found 5-bit adder for signal <a[4]_GND_32_o_add_7_OUT> created at line 0.
+    Found 5-bit adder for signal <a[4]_GND_32_o_add_9_OUT> created at line 0.
+    Found 5-bit adder for signal <a[4]_GND_32_o_add_11_OUT> created at line 0.
+    Found 7-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 6-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 5-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 5-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 5-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 5-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+	inferred  26 Multiplexer(s).
+Unit <mod_5u_2u> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 7
+ 5-bit adder                                           : 5
+ 6-bit adder                                           : 1
+ 7-bit adder                                           : 1
+# Registers                                            : 8
+ 1-bit register                                        : 1
+ 16-bit register                                       : 1
+ 4-bit register                                        : 5
+ 576-bit register                                      : 1
+# Comparators                                          : 6
+ 5-bit comparator lessequal                            : 4
+ 6-bit comparator lessequal                            : 1
+ 7-bit comparator lessequal                            : 1
+# Multiplexers                                         : 47
+ 1-bit 2-to-1 multiplexer                              : 25
+ 16-bit 2-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 1
+ 32-bit 18-to-1 multiplexer                            : 2
+ 32-bit 2-to-1 multiplexer                             : 18
+# Xors                                                 : 764
+ 1-bit xor2                                            : 764
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <M15>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <M14>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <M13>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <M12>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <M11>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <M10>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <M9>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <M8>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <M7>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <M6>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <M5>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <M4>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <M3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <M2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <M1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <M0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <[31].M>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <[30].M>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <[29].M>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <[28].M>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <[27].M>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <[26].M>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <[25].M>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <[24].M>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <[23].M>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <[22].M>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <[21].M>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <[20].M>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <[19].M>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <[18].M>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <[17].M>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <M1> is unconnected in block <[16].M>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <M1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G1> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G1> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G1> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G1> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G1> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G1> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G1> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G1> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G1> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G1> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G1> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G1> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G1> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G1> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G1> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G1> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G1> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G1> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G1> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G1> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G1> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1710 - FF/Latch <STATE_2> (without init value) has a constant value of 0 in block <REG_ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <STATE_3> (without init value) has a constant value of 0 in block <REG_ALU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2404 -  FFs/Latches <STATE<3:2>> (without init value) have a constant value of 0 in block <REG_ALU>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 7
+ 2-bit adder                                           : 1
+ 5-bit adder                                           : 6
+# Registers                                            : 611
+ Flip-Flops                                            : 611
+# Comparators                                          : 6
+ 5-bit comparator lessequal                            : 4
+ 6-bit comparator lessequal                            : 1
+ 7-bit comparator lessequal                            : 1
+# Multiplexers                                         : 47
+ 1-bit 2-to-1 multiplexer                              : 25
+ 16-bit 2-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 1
+ 32-bit 18-to-1 multiplexer                            : 2
+ 32-bit 2-to-1 multiplexer                             : 18
+# Xors                                                 : 764
+ 1-bit xor2                                            : 764
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <REG_FILE_17_0> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_1> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_2> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_3> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_4> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_5> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_6> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_7> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_8> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_9> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_10> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_11> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_12> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_13> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_14> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_15> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_16> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_17> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_18> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_19> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_20> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_21> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_22> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_23> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_24> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_25> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_26> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_27> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_28> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_29> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_30> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_31> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_32> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_33> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_34> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_35> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_36> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_37> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_38> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_39> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_40> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_41> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_42> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_43> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_44> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_45> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_46> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_47> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_48> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_49> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_50> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_51> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_52> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_53> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_54> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_55> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_56> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_57> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_58> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_59> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_60> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_61> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_62> of sequential type is unconnected in block <REG_BANK>.
+WARNING:Xst:2677 - Node <REG_FILE_17_63> of sequential type is unconnected in block <REG_BANK>.
+
+Optimizing unit <REG_ALU> ...
+
+Optimizing unit <REG_BANK> ...
+
+Optimizing unit <K_ALU> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block REG_ALU, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 547
+ Flip-Flops                                            : 547
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : REG_ALU.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1942
+#      LUT2                        : 52
+#      LUT3                        : 109
+#      LUT4                        : 581
+#      LUT5                        : 178
+#      LUT6                        : 786
+#      MUXF7                       : 172
+#      MUXF8                       : 64
+# FlipFlops/Latches                : 547
+#      FDE                         : 516
+#      FDR                         : 1
+#      FDRE                        : 30
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 34
+#      IBUF                        : 18
+#      OBUF                        : 16
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             547  out of  126800     0%  
+ Number of Slice LUTs:                 1706  out of  63400     2%  
+    Number used as Logic:              1706  out of  63400     2%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1716
+   Number with an unused Flip Flop:    1169  out of   1716    68%  
+   Number with an unused LUT:            10  out of   1716     0%  
+   Number of fully used LUT-FF pairs:   537  out of   1716    31%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                          35
+ Number of bonded IOBs:                  35  out of    210    16%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 547   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 6.250ns (Maximum Frequency: 159.999MHz)
+   Minimum input arrival time before clock: 1.210ns
+   Maximum output required time after clock: 0.640ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.250ns (frequency: 159.999MHz)
+  Total number of paths / destination ports: 11824301 / 1075
+-------------------------------------------------------------------------
+Delay:               6.250ns (Levels of Logic = 12)
+  Source:            reg_bank/REG_FILE_17_420 (FF)
+  Destination:       reg_bank/REG_FILE_17_544 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: reg_bank/REG_FILE_17_420 to reg_bank/REG_FILE_17_544
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.361   0.703  reg_bank/REG_FILE_17_420 (reg_bank/REG_FILE_17_420)
+     LUT6:I0->O            1   0.097   0.000  reg_bank/Mmux_REG2_DATA_553 (reg_bank/Mmux_REG2_DATA_553)
+     MUXF7:I1->O           1   0.279   0.000  reg_bank/Mmux_REG2_DATA_4_f7_25 (reg_bank/Mmux_REG2_DATA_4_f726)
+     MUXF8:I0->O          67   0.218   0.795  reg_bank/Mmux_REG2_DATA_2_f8_25 (REG2_DATA<4>)
+     LUT6:I1->O           36   0.097   0.403  k_alu/G1/G1/G2/C<6>1 (k_alu/G1/G1/G2/C<6>)
+     LUT5:I4->O            2   0.097   0.697  k_alu/G1/G2/[8].G/T11 (k_alu/G1/G2/[8].G/T1)
+     LUT6:I0->O            1   0.097   0.000  k_alu/S/[0].M/G3/C42_SW1_G (N574)
+     MUXF7:I1->O           1   0.279   0.295  k_alu/S/[0].M/G3/C42_SW1 (N195)
+     LUT6:I5->O            1   0.097   0.379  k_alu/S/[0].M/G3/C43 (k_alu/S/[0].M/G3/C42)
+     LUT6:I4->O            1   0.097   0.295  k_alu/S/[0].M/G3/C47 (k_alu/S/[0].M/G3/C46)
+     LUT6:I5->O            2   0.097   0.299  k_alu/S/[0].M/G3/C51 (k_alu/S/[0].M/G3/C50)
+     LUT6:I5->O           16   0.097   0.364  k_alu/S/[0].M/G3/C78 (ALU_OUT<0>)
+     LUT4:I3->O            1   0.097   0.000  reg_bank/REG_FILE[0][31]_GND_2_o_mux_23_OUT<64>1 (reg_bank/REG_FILE[0][31]_GND_2_o_mux_23_OUT<64>)
+     FDE:D                     0.008          reg_bank/REG_FILE_17_64
+    ----------------------------------------
+    Total                      6.250ns (2.018ns logic, 4.232ns route)
+                                       (32.3% logic, 67.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1073 / 1073
+-------------------------------------------------------------------------
+Offset:              1.210ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       reg_bank/REG_FILE_17_575 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to reg_bank/REG_FILE_17_575
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           544   0.001   0.559  rst_IBUF (rst_IBUF)
+     LUT2:I0->O          512   0.097   0.458  reg_bank/_n0056_inv1 (reg_bank/_n0056_inv)
+     FDE:CE                    0.095          reg_bank/REG_FILE_17_64
+    ----------------------------------------
+    Total                      1.210ns (0.193ns logic, 1.017ns route)
+                                       (15.9% logic, 84.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              0.640ns (Levels of Logic = 1)
+  Source:            OUT_15 (FF)
+  Destination:       OUT<15> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: OUT_15 to OUT<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.361   0.279  OUT_15 (OUT_15)
+     OBUF:I->O                 0.000          OUT_15_OBUF (OUT<15>)
+    ----------------------------------------
+    Total                      0.640ns (0.361ns logic, 0.279ns route)
+                                       (56.4% logic, 43.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    6.250|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 29.00 secs
+Total CPU time to Xst completion: 29.09 secs
+ 
+--> 
+
+Total memory usage is 4638200 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  238 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

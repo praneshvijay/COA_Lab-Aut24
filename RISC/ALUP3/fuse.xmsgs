@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="248" delta="unknown" >"D:/FPGA/ALU/NOT.v" Line 29: Block identifier is required on this block
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="248" delta="unknown" >"D:/FPGA/ALU/ADD.v" Line 33: Block identifier is required on this block
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="248" delta="unknown" >"D:/FPGA/ALU/XOR.v" Line 30: Block identifier is required on this block
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="248" delta="unknown" >"D:/FPGA/ALU/SELFUNC.v" Line 44: Block identifier is required on this block
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="248" delta="unknown" >"D:/FPGA/ALU/RTST_A32.v" Line 36: Block identifier is required on this block
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="248" delta="unknown" >"D:/FPGA/ALU/RTST_A32.v" Line 43: Block identifier is required on this block
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="248" delta="unknown" >"D:/FPGA/ALU/RTST32.v" Line 36: Block identifier is required on this block
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="248" delta="unknown" >"D:/FPGA/ALU/RTST32.v" Line 43: Block identifier is required on this block
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="248" delta="unknown" >"D:/FPGA/ALU/OR.v" Line 30: Block identifier is required on this block
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="248" delta="unknown" >"D:/FPGA/ALU/NOR.v" Line 30: Block identifier is required on this block
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="248" delta="unknown" >"D:/FPGA/ALU/AND.v" Line 30: Block identifier is required on this block
+</msg>
+
+</messages>
+

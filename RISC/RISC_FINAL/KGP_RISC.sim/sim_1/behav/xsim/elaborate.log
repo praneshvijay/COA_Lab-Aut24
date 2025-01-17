@@ -1,0 +1,59 @@
+Vivado Simulator 2020.1.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto de2ee7a16109429d8d973d1683073bd4 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot RISC_tb_behav xil_defaultlib.RISC_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'DEST_REG' [C:/Users/Student/Downloads/KGP_RISC/KGP_RISC.srcs/sources_1/new/RISC.v:99]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'B' [C:/Users/Student/Downloads/KGP_RISC/KGP_RISC.srcs/sources_1/new/ALU.v:59]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'B' [C:/Users/Student/Downloads/KGP_RISC/KGP_RISC.srcs/sources_1/new/ALU.v:60]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'B' [C:/Users/Student/Downloads/KGP_RISC/KGP_RISC.srcs/sources_1/new/ALU.v:61]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'S' [C:/Users/Student/Downloads/KGP_RISC/KGP_RISC.srcs/sources_1/new/CMOV.v:30]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.instr_memory
+Compiling module xil_defaultlib.INSTR_MEMORY
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.data_memory
+Compiling module xil_defaultlib.DATA_MEMORY
+Compiling module xil_defaultlib.INSTR_DECODER
+Compiling module xil_defaultlib.CONTROL_UNIT
+Compiling module xil_defaultlib.REG_BANK
+Compiling module xil_defaultlib.PC_CONTROL
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.FA
+Compiling module xil_defaultlib.ADD_default
+Compiling module xil_defaultlib.NOT_default
+Compiling module xil_defaultlib.COMP2
+Compiling module xil_defaultlib.SUB
+Compiling module xil_defaultlib.AND_default
+Compiling module xil_defaultlib.OR_default
+Compiling module xil_defaultlib.XOR_default
+Compiling module xil_defaultlib.NOR_default
+Compiling module xil_defaultlib.MUX2to1
+Compiling module xil_defaultlib.SL_default
+Compiling module xil_defaultlib.SRL_default
+Compiling module xil_defaultlib.SRA_default
+Compiling module xil_defaultlib.INC
+Compiling module xil_defaultlib.DEC
+Compiling module xil_defaultlib.SLT
+Compiling module xil_defaultlib.SGT
+Compiling module xil_defaultlib.LUI
+Compiling module xil_defaultlib.FA2
+Compiling module xil_defaultlib.FA3
+Compiling module xil_defaultlib.HAM8
+Compiling module xil_defaultlib.ADD(N=6)
+Compiling module xil_defaultlib.HAM
+Compiling module xil_defaultlib.CMOV
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.RISC
+Compiling module xil_defaultlib.RISC_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RISC_tb_behav

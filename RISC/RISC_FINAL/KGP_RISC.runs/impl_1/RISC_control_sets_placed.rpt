@@ -1,0 +1,106 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1.1 (win64) Build 2960000 Wed Aug  5 22:57:20 MDT 2020
+| Date         : Tue Nov  5 15:20:31 2024
+| Host         : HWLAB15 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file RISC_control_sets_placed.rpt
+| Design       : RISC
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    28 |
+|    Minimum number of control sets                        |    28 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    66 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    28 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    22 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              45 |           21 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              64 |           27 |
+| Yes          | No                    | No                     |              52 |           39 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             533 |          260 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+--------------------------+--------------------------+------------------+----------------+--------------+
+|         Clock Signal        |       Enable Signal      |     Set/Reset Signal     | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------+--------------------------+--------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG              | instr_mem/rst_17         | instr_mem/RegWrite_reg_1 |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG              | instr_mem/rst_15         |                          |                3 |              4 |         1.33 |
+|  clk_IBUF_BUFG              | instr_mem/rst_16         | instr_mem/DestReg_reg_11 |                3 |              4 |         1.33 |
+|  clk_IBUF_BUFG              | instr_mem/rst_13         | instr_mem/DestReg_reg_9  |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG              | instr_mem/rst_9          |                          |                3 |              6 |         2.00 |
+|  clk_IBUF_BUFG              | cu/DestReg_i_1_n_0       |                          |                5 |             10 |         2.00 |
+|  instr_mem/bbstub_douta[28] |                          |                          |                7 |             16 |         2.29 |
+|  clk_IBUF_BUFG              | instr_mem/rst_9          | instr_mem/rst_18         |               15 |             26 |         1.73 |
+|  clk_IBUF_BUFG              | instr_mem/rst_13         | instr_mem/rst_19         |               13 |             27 |         2.08 |
+|  clk_IBUF_BUFG              | instr_mem/rst_17         | instr_mem/rst_23         |               17 |             28 |         1.65 |
+|  clk_IBUF_BUFG              | instr_mem/rst_15         | instr_mem/rst_22         |               16 |             28 |         1.75 |
+|  clk_IBUF_BUFG              | instr_mem/rst_16         | instr_mem/DestReg_reg_17 |               12 |             28 |         2.33 |
+|  clk_IBUF_BUFG              |                          |                          |               14 |             29 |         2.07 |
+|  clk_IBUF_BUFG              | instr_mem/rst_12         | instr_mem/rst_21         |               12 |             29 |         2.42 |
+|  clk_IBUF_BUFG              | instr_mem/rst_10         | instr_mem/rst_4          |               15 |             29 |         1.93 |
+|  clk_IBUF_BUFG              | instr_mem/rst_14         | instr_mem/rst_5          |               13 |             30 |         2.31 |
+|  clk_IBUF_BUFG              | instr_mem/rst_3          | instr_mem/rst_2          |               16 |             30 |         1.88 |
+|  clk_IBUF_BUFG              | instr_mem/rst_7          | instr_mem/rst_20         |               14 |             30 |         2.14 |
+|  clk_IBUF_BUFG              | instr_mem/rst_8          | instr_mem/rst            |               14 |             30 |         2.14 |
+|  clk_IBUF_BUFG              | instr_mem/rst_0          | instr_mem/DestReg_reg_3  |               13 |             30 |         2.31 |
+|  clk_IBUF_BUFG              | instr_mem/rst_1          | instr_mem/DestReg_reg_4  |               18 |             31 |         1.72 |
+|  clk_IBUF_BUFG              |                          | rst_IBUF                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG              |                          | instr_mem/DestReg_reg_1  |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG              | cu/ALUOp_reg[1]_1[0]     |                          |               28 |             32 |         1.14 |
+|  clk_IBUF_BUFG              | cu/E[0]                  | rst_IBUF                 |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG              | instr_mem/RegWrite_reg_3 | instr_mem/RegWrite_reg_2 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG              | instr_mem/rst_11         | instr_mem/DestReg_reg_6  |               19 |             32 |         1.68 |
+|  clk_IBUF_BUFG              | instr_mem/rst_6          | instr_mem/DestReg_reg    |               22 |             48 |         2.18 |
++-----------------------------+--------------------------+--------------------------+------------------+----------------+--------------+
+
+

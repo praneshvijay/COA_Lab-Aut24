@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1730800076">
+  <File Type="BITSTR-BMM" Name="RISC_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="RISC_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="RISC_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="RISC_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="RISC.tcl"/>
+  <File Type="OPT-TIMING" Name="RISC_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="RISC_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="RISC_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="RISC_reports.tcl"/>
+  <File Type="OPT-DRC" Name="RISC_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="RISC.hwdef"/>
+  <File Type="PWROPT-DCP" Name="RISC_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="RISC_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="RISC_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="RISC_placed.dcp"/>
+  <File Type="PLACE-IO" Name="RISC_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="RISC_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="RISC_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="RISC_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="RISC_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="RISC_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="RISC_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="RISC_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="RISC_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="RISC.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="RISC_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="RISC_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="RISC_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="RISC.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="RISC_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="RISC_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="RISC_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="RISC_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="RISC_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="RISC_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="RISC_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="RISC.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="RISC_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="RISC_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="RISC_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="RISC_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="RISC_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="RISC_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="RISC_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="RISC_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="RISC_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="RISC_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="RISC_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="RISC_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="RISC_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="RISC_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="RISC_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="RISC_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="RISC_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="RISC_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="RISC_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="RISC_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="RISC_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="RISC.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="RISC_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="RISC.rbt"/>
+  <File Type="BITSTR-NKY" Name="RISC.nky"/>
+  <File Type="PDI-FILE" Name="RISC.pdi"/>
+  <File Type="RCFI_FILE" Name="RISC.rcfi"/>
+  <File Type="CFI_FILE" Name="RISC.cfi"/>
+  <File Type="RNPI_FILE" Name="RISC.rnpi"/>
+  <File Type="NPI_FILE" Name="RISC.npi"/>
+  <File Type="RBD_FILE" Name="RISC.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="RISC.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="RISC.sysdef"/>
+  <File Type="BG-BGN" Name="RISC.bgn"/>
+  <File Type="BG-DRC" Name="RISC.drc"/>
+  <File Type="RDI-RDI" Name="RISC.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/ADD.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/ADD.v"/>
+        <Attr Name="ImportTime" Val="1729974490"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ALU.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/ALU.v"/>
+        <Attr Name="ImportTime" Val="1730746468"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/AND.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/AND.v"/>
+        <Attr Name="ImportTime" Val="1729974536"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CMOV.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/CMOV.v"/>
+        <Attr Name="ImportTime" Val="1729976306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/COMP2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/COMP2.v"/>
+        <Attr Name="ImportTime" Val="1729974481"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CONTROL_UNIT.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/CONTROL_UNIT.v"/>
+        <Attr Name="ImportTime" Val="1730740324"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DATA_MEMORY.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/DATA_MEMORY.v"/>
+        <Attr Name="ImportTime" Val="1730283196"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DEC.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/DEC.v"/>
+        <Attr Name="ImportTime" Val="1729975803"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FA.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/FA.v"/>
+        <Attr Name="ImportTime" Val="1729973822"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FA2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/FA2.v"/>
+        <Attr Name="ImportTime" Val="1729975971"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FA3.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/FA3.v"/>
+        <Attr Name="ImportTime" Val="1729975984"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/HAM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/HAM.v"/>
+        <Attr Name="ImportTime" Val="1729976014"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/HAM8.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/HAM8.v"/>
+        <Attr Name="ImportTime" Val="1729975911"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/INC.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/INC.v"/>
+        <Attr Name="ImportTime" Val="1729975603"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/INSTR_DECODER.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/INSTR_DECODER.v"/>
+        <Attr Name="ImportTime" Val="1730052849"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/INSTR_MEMORY.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/INSTR_MEMORY.v"/>
+        <Attr Name="ImportTime" Val="1730283738"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/LUI.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/LUI.v"/>
+        <Attr Name="ImportTime" Val="1729975853"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MUX2to1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/MUX2to1.v"/>
+        <Attr Name="ImportTime" Val="1729972485"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/NOR.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/NOR.v"/>
+        <Attr Name="ImportTime" Val="1729974466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/NOT.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/NOT.v"/>
+        <Attr Name="ImportTime" Val="1729974477"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/OR.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/OR.v"/>
+        <Attr Name="ImportTime" Val="1729974471"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PC.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/PC.v"/>
+        <Attr Name="ImportTime" Val="1729981519"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PC_CONTROL.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/PC_CONTROL.v"/>
+        <Attr Name="ImportTime" Val="1730049876"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/REG_BANK.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/REG_BANK.v"/>
+        <Attr Name="ImportTime" Val="1730746274"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SGT.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/SGT.v"/>
+        <Attr Name="ImportTime" Val="1729975830"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SL.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/SL.v"/>
+        <Attr Name="ImportTime" Val="1729972745"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SLT.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/SLT.v"/>
+        <Attr Name="ImportTime" Val="1729975796"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SRA.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/SRA.v"/>
+        <Attr Name="ImportTime" Val="1729975460"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SRL.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/SRL.v"/>
+        <Attr Name="ImportTime" Val="1730286398"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SUB.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/SUB.v"/>
+        <Attr Name="ImportTime" Val="1729974558"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/XOR.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/XOR.v"/>
+        <Attr Name="ImportTime" Val="1729974462"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RISC.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/RISC.v"/>
+        <Attr Name="ImportTime" Val="1730745888"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CLK_DIV.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/CLK_DIV.v"/>
+        <Attr Name="ImportTime" Val="1730495100"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ALU_CONTROL.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/sources_1/new/ALU_CONTROL.v"/>
+        <Attr Name="ImportTime" Val="1730050216"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/instr_mem_coe.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/data_mem_coe.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="RISC"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/risc_xdc.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RISC/RISC.srcs/constrs_1/new/risc_xdc.xdc"/>
+        <Attr Name="ImportTime" Val="1730744604"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="instr_memory"/>
+  <BlockFileSet Type="BlockSrcs" Name="data_memory"/>
+</GenRun>

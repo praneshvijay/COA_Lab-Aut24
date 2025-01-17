@@ -1,0 +1,308 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Oct 16 15:55:56 2024
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "rst" LOCATE = SITE "N17" LEVEL 1;
+COMP "OUT<12>" LOCATE = SITE "V15" LEVEL 1;
+COMP "OUT<11>" LOCATE = SITE "T16" LEVEL 1;
+COMP "OUT<14>" LOCATE = SITE "V12" LEVEL 1;
+COMP "OUT<13>" LOCATE = SITE "V14" LEVEL 1;
+COMP "OUT<10>" LOCATE = SITE "U14" LEVEL 1;
+COMP "OUT<15>" LOCATE = SITE "V11" LEVEL 1;
+COMP "INS<11>" LOCATE = SITE "T13" LEVEL 1;
+COMP "INS<12>" LOCATE = SITE "H6" LEVEL 1;
+COMP "INS<13>" LOCATE = SITE "U12" LEVEL 1;
+COMP "INS<14>" LOCATE = SITE "U11" LEVEL 1;
+COMP "INS<10>" LOCATE = SITE "R16" LEVEL 1;
+COMP "INS<15>" LOCATE = SITE "V10" LEVEL 1;
+COMP "OUT<0>" LOCATE = SITE "H17" LEVEL 1;
+COMP "OUT<1>" LOCATE = SITE "K15" LEVEL 1;
+COMP "OUT<2>" LOCATE = SITE "J13" LEVEL 1;
+COMP "OUT<3>" LOCATE = SITE "N14" LEVEL 1;
+COMP "OUT<4>" LOCATE = SITE "R18" LEVEL 1;
+COMP "OUT<5>" LOCATE = SITE "V17" LEVEL 1;
+COMP "OUT<6>" LOCATE = SITE "U17" LEVEL 1;
+COMP "OUT<7>" LOCATE = SITE "U16" LEVEL 1;
+COMP "OUT<8>" LOCATE = SITE "V16" LEVEL 1;
+COMP "OUT<9>" LOCATE = SITE "T15" LEVEL 1;
+COMP "INS<0>" LOCATE = SITE "J15" LEVEL 1;
+COMP "INS<1>" LOCATE = SITE "L16" LEVEL 1;
+COMP "INS<2>" LOCATE = SITE "M13" LEVEL 1;
+COMP "INS<3>" LOCATE = SITE "R15" LEVEL 1;
+COMP "INS<4>" LOCATE = SITE "R17" LEVEL 1;
+COMP "INS<5>" LOCATE = SITE "T18" LEVEL 1;
+COMP "INS<6>" LOCATE = SITE "U18" LEVEL 1;
+COMP "INS<7>" LOCATE = SITE "R13" LEVEL 1;
+COMP "INS<8>" LOCATE = SITE "T8" LEVEL 1;
+COMP "INS<9>" LOCATE = SITE "U8" LEVEL 1;
+COMP "btn" LOCATE = SITE "P18" LEVEL 1;
+COMP "clk" LOCATE = SITE "E3" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "WRT_EN" BEL "OP_CODE_0" BEL "OP_CODE_1" BEL
+        "OP_CODE_2" BEL "OP_CODE_3" BEL "SRC_REG1_0" BEL "SRC_REG1_1" BEL
+        "SRC_REG1_2" BEL "SRC_REG1_3" BEL "SRC_REG2_0" BEL "SRC_REG2_1" BEL
+        "SRC_REG2_2" BEL "SRC_REG2_3" BEL "DEST_REG_0" BEL "DEST_REG_1" BEL
+        "DEST_REG_2" BEL "DEST_REG_3" BEL "STATE_0" BEL "STATE_1" BEL "OUT_0"
+        BEL "OUT_1" BEL "OUT_2" BEL "OUT_3" BEL "OUT_4" BEL "OUT_5" BEL
+        "OUT_6" BEL "OUT_7" BEL "OUT_8" BEL "OUT_9" BEL "OUT_10" BEL "OUT_11"
+        BEL "OUT_12" BEL "OUT_13" BEL "OUT_14" BEL "OUT_15" BEL
+        "reg_bank/REG_FILE_17_575" BEL "reg_bank/REG_FILE_17_574" BEL
+        "reg_bank/REG_FILE_17_573" BEL "reg_bank/REG_FILE_17_572" BEL
+        "reg_bank/REG_FILE_17_571" BEL "reg_bank/REG_FILE_17_570" BEL
+        "reg_bank/REG_FILE_17_569" BEL "reg_bank/REG_FILE_17_568" BEL
+        "reg_bank/REG_FILE_17_567" BEL "reg_bank/REG_FILE_17_566" BEL
+        "reg_bank/REG_FILE_17_565" BEL "reg_bank/REG_FILE_17_564" BEL
+        "reg_bank/REG_FILE_17_563" BEL "reg_bank/REG_FILE_17_562" BEL
+        "reg_bank/REG_FILE_17_561" BEL "reg_bank/REG_FILE_17_560" BEL
+        "reg_bank/REG_FILE_17_559" BEL "reg_bank/REG_FILE_17_558" BEL
+        "reg_bank/REG_FILE_17_557" BEL "reg_bank/REG_FILE_17_556" BEL
+        "reg_bank/REG_FILE_17_555" BEL "reg_bank/REG_FILE_17_554" BEL
+        "reg_bank/REG_FILE_17_553" BEL "reg_bank/REG_FILE_17_552" BEL
+        "reg_bank/REG_FILE_17_551" BEL "reg_bank/REG_FILE_17_550" BEL
+        "reg_bank/REG_FILE_17_549" BEL "reg_bank/REG_FILE_17_548" BEL
+        "reg_bank/REG_FILE_17_547" BEL "reg_bank/REG_FILE_17_546" BEL
+        "reg_bank/REG_FILE_17_545" BEL "reg_bank/REG_FILE_17_544" BEL
+        "reg_bank/REG_FILE_17_543" BEL "reg_bank/REG_FILE_17_542" BEL
+        "reg_bank/REG_FILE_17_541" BEL "reg_bank/REG_FILE_17_540" BEL
+        "reg_bank/REG_FILE_17_539" BEL "reg_bank/REG_FILE_17_538" BEL
+        "reg_bank/REG_FILE_17_537" BEL "reg_bank/REG_FILE_17_536" BEL
+        "reg_bank/REG_FILE_17_535" BEL "reg_bank/REG_FILE_17_534" BEL
+        "reg_bank/REG_FILE_17_533" BEL "reg_bank/REG_FILE_17_532" BEL
+        "reg_bank/REG_FILE_17_531" BEL "reg_bank/REG_FILE_17_530" BEL
+        "reg_bank/REG_FILE_17_529" BEL "reg_bank/REG_FILE_17_528" BEL
+        "reg_bank/REG_FILE_17_527" BEL "reg_bank/REG_FILE_17_526" BEL
+        "reg_bank/REG_FILE_17_525" BEL "reg_bank/REG_FILE_17_524" BEL
+        "reg_bank/REG_FILE_17_523" BEL "reg_bank/REG_FILE_17_522" BEL
+        "reg_bank/REG_FILE_17_521" BEL "reg_bank/REG_FILE_17_520" BEL
+        "reg_bank/REG_FILE_17_519" BEL "reg_bank/REG_FILE_17_518" BEL
+        "reg_bank/REG_FILE_17_517" BEL "reg_bank/REG_FILE_17_516" BEL
+        "reg_bank/REG_FILE_17_515" BEL "reg_bank/REG_FILE_17_514" BEL
+        "reg_bank/REG_FILE_17_513" BEL "reg_bank/REG_FILE_17_512" BEL
+        "reg_bank/REG_FILE_17_511" BEL "reg_bank/REG_FILE_17_510" BEL
+        "reg_bank/REG_FILE_17_509" BEL "reg_bank/REG_FILE_17_508" BEL
+        "reg_bank/REG_FILE_17_507" BEL "reg_bank/REG_FILE_17_506" BEL
+        "reg_bank/REG_FILE_17_505" BEL "reg_bank/REG_FILE_17_504" BEL
+        "reg_bank/REG_FILE_17_503" BEL "reg_bank/REG_FILE_17_502" BEL
+        "reg_bank/REG_FILE_17_501" BEL "reg_bank/REG_FILE_17_500" BEL
+        "reg_bank/REG_FILE_17_499" BEL "reg_bank/REG_FILE_17_498" BEL
+        "reg_bank/REG_FILE_17_497" BEL "reg_bank/REG_FILE_17_496" BEL
+        "reg_bank/REG_FILE_17_495" BEL "reg_bank/REG_FILE_17_494" BEL
+        "reg_bank/REG_FILE_17_493" BEL "reg_bank/REG_FILE_17_492" BEL
+        "reg_bank/REG_FILE_17_491" BEL "reg_bank/REG_FILE_17_490" BEL
+        "reg_bank/REG_FILE_17_489" BEL "reg_bank/REG_FILE_17_488" BEL
+        "reg_bank/REG_FILE_17_487" BEL "reg_bank/REG_FILE_17_486" BEL
+        "reg_bank/REG_FILE_17_485" BEL "reg_bank/REG_FILE_17_484" BEL
+        "reg_bank/REG_FILE_17_483" BEL "reg_bank/REG_FILE_17_482" BEL
+        "reg_bank/REG_FILE_17_481" BEL "reg_bank/REG_FILE_17_480" BEL
+        "reg_bank/REG_FILE_17_479" BEL "reg_bank/REG_FILE_17_478" BEL
+        "reg_bank/REG_FILE_17_477" BEL "reg_bank/REG_FILE_17_476" BEL
+        "reg_bank/REG_FILE_17_475" BEL "reg_bank/REG_FILE_17_474" BEL
+        "reg_bank/REG_FILE_17_473" BEL "reg_bank/REG_FILE_17_472" BEL
+        "reg_bank/REG_FILE_17_471" BEL "reg_bank/REG_FILE_17_470" BEL
+        "reg_bank/REG_FILE_17_469" BEL "reg_bank/REG_FILE_17_468" BEL
+        "reg_bank/REG_FILE_17_467" BEL "reg_bank/REG_FILE_17_466" BEL
+        "reg_bank/REG_FILE_17_465" BEL "reg_bank/REG_FILE_17_464" BEL
+        "reg_bank/REG_FILE_17_463" BEL "reg_bank/REG_FILE_17_462" BEL
+        "reg_bank/REG_FILE_17_461" BEL "reg_bank/REG_FILE_17_460" BEL
+        "reg_bank/REG_FILE_17_459" BEL "reg_bank/REG_FILE_17_458" BEL
+        "reg_bank/REG_FILE_17_457" BEL "reg_bank/REG_FILE_17_456" BEL
+        "reg_bank/REG_FILE_17_455" BEL "reg_bank/REG_FILE_17_454" BEL
+        "reg_bank/REG_FILE_17_453" BEL "reg_bank/REG_FILE_17_452" BEL
+        "reg_bank/REG_FILE_17_451" BEL "reg_bank/REG_FILE_17_450" BEL
+        "reg_bank/REG_FILE_17_449" BEL "reg_bank/REG_FILE_17_448" BEL
+        "reg_bank/REG_FILE_17_447" BEL "reg_bank/REG_FILE_17_446" BEL
+        "reg_bank/REG_FILE_17_445" BEL "reg_bank/REG_FILE_17_444" BEL
+        "reg_bank/REG_FILE_17_443" BEL "reg_bank/REG_FILE_17_442" BEL
+        "reg_bank/REG_FILE_17_441" BEL "reg_bank/REG_FILE_17_440" BEL
+        "reg_bank/REG_FILE_17_439" BEL "reg_bank/REG_FILE_17_438" BEL
+        "reg_bank/REG_FILE_17_437" BEL "reg_bank/REG_FILE_17_436" BEL
+        "reg_bank/REG_FILE_17_435" BEL "reg_bank/REG_FILE_17_434" BEL
+        "reg_bank/REG_FILE_17_433" BEL "reg_bank/REG_FILE_17_432" BEL
+        "reg_bank/REG_FILE_17_431" BEL "reg_bank/REG_FILE_17_430" BEL
+        "reg_bank/REG_FILE_17_429" BEL "reg_bank/REG_FILE_17_428" BEL
+        "reg_bank/REG_FILE_17_427" BEL "reg_bank/REG_FILE_17_426" BEL
+        "reg_bank/REG_FILE_17_425" BEL "reg_bank/REG_FILE_17_424" BEL
+        "reg_bank/REG_FILE_17_423" BEL "reg_bank/REG_FILE_17_422" BEL
+        "reg_bank/REG_FILE_17_421" BEL "reg_bank/REG_FILE_17_420" BEL
+        "reg_bank/REG_FILE_17_419" BEL "reg_bank/REG_FILE_17_418" BEL
+        "reg_bank/REG_FILE_17_417" BEL "reg_bank/REG_FILE_17_416" BEL
+        "reg_bank/REG_FILE_17_415" BEL "reg_bank/REG_FILE_17_414" BEL
+        "reg_bank/REG_FILE_17_413" BEL "reg_bank/REG_FILE_17_412" BEL
+        "reg_bank/REG_FILE_17_411" BEL "reg_bank/REG_FILE_17_410" BEL
+        "reg_bank/REG_FILE_17_409" BEL "reg_bank/REG_FILE_17_408" BEL
+        "reg_bank/REG_FILE_17_407" BEL "reg_bank/REG_FILE_17_406" BEL
+        "reg_bank/REG_FILE_17_405" BEL "reg_bank/REG_FILE_17_404" BEL
+        "reg_bank/REG_FILE_17_403" BEL "reg_bank/REG_FILE_17_402" BEL
+        "reg_bank/REG_FILE_17_401" BEL "reg_bank/REG_FILE_17_400" BEL
+        "reg_bank/REG_FILE_17_399" BEL "reg_bank/REG_FILE_17_398" BEL
+        "reg_bank/REG_FILE_17_397" BEL "reg_bank/REG_FILE_17_396" BEL
+        "reg_bank/REG_FILE_17_395" BEL "reg_bank/REG_FILE_17_394" BEL
+        "reg_bank/REG_FILE_17_393" BEL "reg_bank/REG_FILE_17_392" BEL
+        "reg_bank/REG_FILE_17_391" BEL "reg_bank/REG_FILE_17_390" BEL
+        "reg_bank/REG_FILE_17_389" BEL "reg_bank/REG_FILE_17_388" BEL
+        "reg_bank/REG_FILE_17_387" BEL "reg_bank/REG_FILE_17_386" BEL
+        "reg_bank/REG_FILE_17_385" BEL "reg_bank/REG_FILE_17_384" BEL
+        "reg_bank/REG_FILE_17_383" BEL "reg_bank/REG_FILE_17_382" BEL
+        "reg_bank/REG_FILE_17_381" BEL "reg_bank/REG_FILE_17_380" BEL
+        "reg_bank/REG_FILE_17_379" BEL "reg_bank/REG_FILE_17_378" BEL
+        "reg_bank/REG_FILE_17_377" BEL "reg_bank/REG_FILE_17_376" BEL
+        "reg_bank/REG_FILE_17_375" BEL "reg_bank/REG_FILE_17_374" BEL
+        "reg_bank/REG_FILE_17_373" BEL "reg_bank/REG_FILE_17_372" BEL
+        "reg_bank/REG_FILE_17_371" BEL "reg_bank/REG_FILE_17_370" BEL
+        "reg_bank/REG_FILE_17_369" BEL "reg_bank/REG_FILE_17_368" BEL
+        "reg_bank/REG_FILE_17_367" BEL "reg_bank/REG_FILE_17_366" BEL
+        "reg_bank/REG_FILE_17_365" BEL "reg_bank/REG_FILE_17_364" BEL
+        "reg_bank/REG_FILE_17_363" BEL "reg_bank/REG_FILE_17_362" BEL
+        "reg_bank/REG_FILE_17_361" BEL "reg_bank/REG_FILE_17_360" BEL
+        "reg_bank/REG_FILE_17_359" BEL "reg_bank/REG_FILE_17_358" BEL
+        "reg_bank/REG_FILE_17_357" BEL "reg_bank/REG_FILE_17_356" BEL
+        "reg_bank/REG_FILE_17_355" BEL "reg_bank/REG_FILE_17_354" BEL
+        "reg_bank/REG_FILE_17_353" BEL "reg_bank/REG_FILE_17_352" BEL
+        "reg_bank/REG_FILE_17_351" BEL "reg_bank/REG_FILE_17_350" BEL
+        "reg_bank/REG_FILE_17_349" BEL "reg_bank/REG_FILE_17_348" BEL
+        "reg_bank/REG_FILE_17_347" BEL "reg_bank/REG_FILE_17_346" BEL
+        "reg_bank/REG_FILE_17_345" BEL "reg_bank/REG_FILE_17_344" BEL
+        "reg_bank/REG_FILE_17_343" BEL "reg_bank/REG_FILE_17_342" BEL
+        "reg_bank/REG_FILE_17_341" BEL "reg_bank/REG_FILE_17_340" BEL
+        "reg_bank/REG_FILE_17_339" BEL "reg_bank/REG_FILE_17_338" BEL
+        "reg_bank/REG_FILE_17_337" BEL "reg_bank/REG_FILE_17_336" BEL
+        "reg_bank/REG_FILE_17_335" BEL "reg_bank/REG_FILE_17_334" BEL
+        "reg_bank/REG_FILE_17_333" BEL "reg_bank/REG_FILE_17_332" BEL
+        "reg_bank/REG_FILE_17_331" BEL "reg_bank/REG_FILE_17_330" BEL
+        "reg_bank/REG_FILE_17_329" BEL "reg_bank/REG_FILE_17_328" BEL
+        "reg_bank/REG_FILE_17_327" BEL "reg_bank/REG_FILE_17_326" BEL
+        "reg_bank/REG_FILE_17_325" BEL "reg_bank/REG_FILE_17_324" BEL
+        "reg_bank/REG_FILE_17_323" BEL "reg_bank/REG_FILE_17_322" BEL
+        "reg_bank/REG_FILE_17_321" BEL "reg_bank/REG_FILE_17_320" BEL
+        "reg_bank/REG_FILE_17_319" BEL "reg_bank/REG_FILE_17_318" BEL
+        "reg_bank/REG_FILE_17_317" BEL "reg_bank/REG_FILE_17_316" BEL
+        "reg_bank/REG_FILE_17_315" BEL "reg_bank/REG_FILE_17_314" BEL
+        "reg_bank/REG_FILE_17_313" BEL "reg_bank/REG_FILE_17_312" BEL
+        "reg_bank/REG_FILE_17_311" BEL "reg_bank/REG_FILE_17_310" BEL
+        "reg_bank/REG_FILE_17_309" BEL "reg_bank/REG_FILE_17_308" BEL
+        "reg_bank/REG_FILE_17_307" BEL "reg_bank/REG_FILE_17_306" BEL
+        "reg_bank/REG_FILE_17_305" BEL "reg_bank/REG_FILE_17_304" BEL
+        "reg_bank/REG_FILE_17_303" BEL "reg_bank/REG_FILE_17_302" BEL
+        "reg_bank/REG_FILE_17_301" BEL "reg_bank/REG_FILE_17_300" BEL
+        "reg_bank/REG_FILE_17_299" BEL "reg_bank/REG_FILE_17_298" BEL
+        "reg_bank/REG_FILE_17_297" BEL "reg_bank/REG_FILE_17_296" BEL
+        "reg_bank/REG_FILE_17_295" BEL "reg_bank/REG_FILE_17_294" BEL
+        "reg_bank/REG_FILE_17_293" BEL "reg_bank/REG_FILE_17_292" BEL
+        "reg_bank/REG_FILE_17_291" BEL "reg_bank/REG_FILE_17_290" BEL
+        "reg_bank/REG_FILE_17_289" BEL "reg_bank/REG_FILE_17_288" BEL
+        "reg_bank/REG_FILE_17_287" BEL "reg_bank/REG_FILE_17_286" BEL
+        "reg_bank/REG_FILE_17_285" BEL "reg_bank/REG_FILE_17_284" BEL
+        "reg_bank/REG_FILE_17_283" BEL "reg_bank/REG_FILE_17_282" BEL
+        "reg_bank/REG_FILE_17_281" BEL "reg_bank/REG_FILE_17_280" BEL
+        "reg_bank/REG_FILE_17_279" BEL "reg_bank/REG_FILE_17_278" BEL
+        "reg_bank/REG_FILE_17_277" BEL "reg_bank/REG_FILE_17_276" BEL
+        "reg_bank/REG_FILE_17_275" BEL "reg_bank/REG_FILE_17_274" BEL
+        "reg_bank/REG_FILE_17_273" BEL "reg_bank/REG_FILE_17_272" BEL
+        "reg_bank/REG_FILE_17_271" BEL "reg_bank/REG_FILE_17_270" BEL
+        "reg_bank/REG_FILE_17_269" BEL "reg_bank/REG_FILE_17_268" BEL
+        "reg_bank/REG_FILE_17_267" BEL "reg_bank/REG_FILE_17_266" BEL
+        "reg_bank/REG_FILE_17_265" BEL "reg_bank/REG_FILE_17_264" BEL
+        "reg_bank/REG_FILE_17_263" BEL "reg_bank/REG_FILE_17_262" BEL
+        "reg_bank/REG_FILE_17_261" BEL "reg_bank/REG_FILE_17_260" BEL
+        "reg_bank/REG_FILE_17_259" BEL "reg_bank/REG_FILE_17_258" BEL
+        "reg_bank/REG_FILE_17_257" BEL "reg_bank/REG_FILE_17_256" BEL
+        "reg_bank/REG_FILE_17_255" BEL "reg_bank/REG_FILE_17_254" BEL
+        "reg_bank/REG_FILE_17_253" BEL "reg_bank/REG_FILE_17_252" BEL
+        "reg_bank/REG_FILE_17_251" BEL "reg_bank/REG_FILE_17_250" BEL
+        "reg_bank/REG_FILE_17_249" BEL "reg_bank/REG_FILE_17_248" BEL
+        "reg_bank/REG_FILE_17_247" BEL "reg_bank/REG_FILE_17_246" BEL
+        "reg_bank/REG_FILE_17_245" BEL "reg_bank/REG_FILE_17_244" BEL
+        "reg_bank/REG_FILE_17_243" BEL "reg_bank/REG_FILE_17_242" BEL
+        "reg_bank/REG_FILE_17_241" BEL "reg_bank/REG_FILE_17_240" BEL
+        "reg_bank/REG_FILE_17_239" BEL "reg_bank/REG_FILE_17_238" BEL
+        "reg_bank/REG_FILE_17_237" BEL "reg_bank/REG_FILE_17_236" BEL
+        "reg_bank/REG_FILE_17_235" BEL "reg_bank/REG_FILE_17_234" BEL
+        "reg_bank/REG_FILE_17_233" BEL "reg_bank/REG_FILE_17_232" BEL
+        "reg_bank/REG_FILE_17_231" BEL "reg_bank/REG_FILE_17_230" BEL
+        "reg_bank/REG_FILE_17_229" BEL "reg_bank/REG_FILE_17_228" BEL
+        "reg_bank/REG_FILE_17_227" BEL "reg_bank/REG_FILE_17_226" BEL
+        "reg_bank/REG_FILE_17_225" BEL "reg_bank/REG_FILE_17_224" BEL
+        "reg_bank/REG_FILE_17_223" BEL "reg_bank/REG_FILE_17_222" BEL
+        "reg_bank/REG_FILE_17_221" BEL "reg_bank/REG_FILE_17_220" BEL
+        "reg_bank/REG_FILE_17_219" BEL "reg_bank/REG_FILE_17_218" BEL
+        "reg_bank/REG_FILE_17_217" BEL "reg_bank/REG_FILE_17_216" BEL
+        "reg_bank/REG_FILE_17_215" BEL "reg_bank/REG_FILE_17_214" BEL
+        "reg_bank/REG_FILE_17_213" BEL "reg_bank/REG_FILE_17_212" BEL
+        "reg_bank/REG_FILE_17_211" BEL "reg_bank/REG_FILE_17_210" BEL
+        "reg_bank/REG_FILE_17_209" BEL "reg_bank/REG_FILE_17_208" BEL
+        "reg_bank/REG_FILE_17_207" BEL "reg_bank/REG_FILE_17_206" BEL
+        "reg_bank/REG_FILE_17_205" BEL "reg_bank/REG_FILE_17_204" BEL
+        "reg_bank/REG_FILE_17_203" BEL "reg_bank/REG_FILE_17_202" BEL
+        "reg_bank/REG_FILE_17_201" BEL "reg_bank/REG_FILE_17_200" BEL
+        "reg_bank/REG_FILE_17_199" BEL "reg_bank/REG_FILE_17_198" BEL
+        "reg_bank/REG_FILE_17_197" BEL "reg_bank/REG_FILE_17_196" BEL
+        "reg_bank/REG_FILE_17_195" BEL "reg_bank/REG_FILE_17_194" BEL
+        "reg_bank/REG_FILE_17_193" BEL "reg_bank/REG_FILE_17_192" BEL
+        "reg_bank/REG_FILE_17_191" BEL "reg_bank/REG_FILE_17_190" BEL
+        "reg_bank/REG_FILE_17_189" BEL "reg_bank/REG_FILE_17_188" BEL
+        "reg_bank/REG_FILE_17_187" BEL "reg_bank/REG_FILE_17_186" BEL
+        "reg_bank/REG_FILE_17_185" BEL "reg_bank/REG_FILE_17_184" BEL
+        "reg_bank/REG_FILE_17_183" BEL "reg_bank/REG_FILE_17_182" BEL
+        "reg_bank/REG_FILE_17_181" BEL "reg_bank/REG_FILE_17_180" BEL
+        "reg_bank/REG_FILE_17_179" BEL "reg_bank/REG_FILE_17_178" BEL
+        "reg_bank/REG_FILE_17_177" BEL "reg_bank/REG_FILE_17_176" BEL
+        "reg_bank/REG_FILE_17_175" BEL "reg_bank/REG_FILE_17_174" BEL
+        "reg_bank/REG_FILE_17_173" BEL "reg_bank/REG_FILE_17_172" BEL
+        "reg_bank/REG_FILE_17_171" BEL "reg_bank/REG_FILE_17_170" BEL
+        "reg_bank/REG_FILE_17_169" BEL "reg_bank/REG_FILE_17_168" BEL
+        "reg_bank/REG_FILE_17_167" BEL "reg_bank/REG_FILE_17_166" BEL
+        "reg_bank/REG_FILE_17_165" BEL "reg_bank/REG_FILE_17_164" BEL
+        "reg_bank/REG_FILE_17_163" BEL "reg_bank/REG_FILE_17_162" BEL
+        "reg_bank/REG_FILE_17_161" BEL "reg_bank/REG_FILE_17_160" BEL
+        "reg_bank/REG_FILE_17_159" BEL "reg_bank/REG_FILE_17_158" BEL
+        "reg_bank/REG_FILE_17_157" BEL "reg_bank/REG_FILE_17_156" BEL
+        "reg_bank/REG_FILE_17_155" BEL "reg_bank/REG_FILE_17_154" BEL
+        "reg_bank/REG_FILE_17_153" BEL "reg_bank/REG_FILE_17_152" BEL
+        "reg_bank/REG_FILE_17_151" BEL "reg_bank/REG_FILE_17_150" BEL
+        "reg_bank/REG_FILE_17_149" BEL "reg_bank/REG_FILE_17_148" BEL
+        "reg_bank/REG_FILE_17_147" BEL "reg_bank/REG_FILE_17_146" BEL
+        "reg_bank/REG_FILE_17_145" BEL "reg_bank/REG_FILE_17_144" BEL
+        "reg_bank/REG_FILE_17_143" BEL "reg_bank/REG_FILE_17_142" BEL
+        "reg_bank/REG_FILE_17_141" BEL "reg_bank/REG_FILE_17_140" BEL
+        "reg_bank/REG_FILE_17_139" BEL "reg_bank/REG_FILE_17_138" BEL
+        "reg_bank/REG_FILE_17_137" BEL "reg_bank/REG_FILE_17_136" BEL
+        "reg_bank/REG_FILE_17_135" BEL "reg_bank/REG_FILE_17_134" BEL
+        "reg_bank/REG_FILE_17_133" BEL "reg_bank/REG_FILE_17_132" BEL
+        "reg_bank/REG_FILE_17_131" BEL "reg_bank/REG_FILE_17_130" BEL
+        "reg_bank/REG_FILE_17_129" BEL "reg_bank/REG_FILE_17_128" BEL
+        "reg_bank/REG_FILE_17_127" BEL "reg_bank/REG_FILE_17_126" BEL
+        "reg_bank/REG_FILE_17_125" BEL "reg_bank/REG_FILE_17_124" BEL
+        "reg_bank/REG_FILE_17_123" BEL "reg_bank/REG_FILE_17_122" BEL
+        "reg_bank/REG_FILE_17_121" BEL "reg_bank/REG_FILE_17_120" BEL
+        "reg_bank/REG_FILE_17_119" BEL "reg_bank/REG_FILE_17_118" BEL
+        "reg_bank/REG_FILE_17_117" BEL "reg_bank/REG_FILE_17_116" BEL
+        "reg_bank/REG_FILE_17_115" BEL "reg_bank/REG_FILE_17_114" BEL
+        "reg_bank/REG_FILE_17_113" BEL "reg_bank/REG_FILE_17_112" BEL
+        "reg_bank/REG_FILE_17_111" BEL "reg_bank/REG_FILE_17_110" BEL
+        "reg_bank/REG_FILE_17_109" BEL "reg_bank/REG_FILE_17_108" BEL
+        "reg_bank/REG_FILE_17_107" BEL "reg_bank/REG_FILE_17_106" BEL
+        "reg_bank/REG_FILE_17_105" BEL "reg_bank/REG_FILE_17_104" BEL
+        "reg_bank/REG_FILE_17_103" BEL "reg_bank/REG_FILE_17_102" BEL
+        "reg_bank/REG_FILE_17_101" BEL "reg_bank/REG_FILE_17_100" BEL
+        "reg_bank/REG_FILE_17_99" BEL "reg_bank/REG_FILE_17_98" BEL
+        "reg_bank/REG_FILE_17_97" BEL "reg_bank/REG_FILE_17_96" BEL
+        "reg_bank/REG_FILE_17_95" BEL "reg_bank/REG_FILE_17_94" BEL
+        "reg_bank/REG_FILE_17_93" BEL "reg_bank/REG_FILE_17_92" BEL
+        "reg_bank/REG_FILE_17_91" BEL "reg_bank/REG_FILE_17_90" BEL
+        "reg_bank/REG_FILE_17_89" BEL "reg_bank/REG_FILE_17_88" BEL
+        "reg_bank/REG_FILE_17_87" BEL "reg_bank/REG_FILE_17_86" BEL
+        "reg_bank/REG_FILE_17_85" BEL "reg_bank/REG_FILE_17_84" BEL
+        "reg_bank/REG_FILE_17_83" BEL "reg_bank/REG_FILE_17_82" BEL
+        "reg_bank/REG_FILE_17_81" BEL "reg_bank/REG_FILE_17_80" BEL
+        "reg_bank/REG_FILE_17_79" BEL "reg_bank/REG_FILE_17_78" BEL
+        "reg_bank/REG_FILE_17_77" BEL "reg_bank/REG_FILE_17_76" BEL
+        "reg_bank/REG_FILE_17_75" BEL "reg_bank/REG_FILE_17_74" BEL
+        "reg_bank/REG_FILE_17_73" BEL "reg_bank/REG_FILE_17_72" BEL
+        "reg_bank/REG_FILE_17_71" BEL "reg_bank/REG_FILE_17_70" BEL
+        "reg_bank/REG_FILE_17_69" BEL "reg_bank/REG_FILE_17_68" BEL
+        "reg_bank/REG_FILE_17_67" BEL "reg_bank/REG_FILE_17_66" BEL
+        "reg_bank/REG_FILE_17_65" BEL "reg_bank/REG_FILE_17_64" BEL
+        "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+
