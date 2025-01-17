@@ -1,0 +1,10 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+F:/TA/HWSEC/Accumulator/Accumulator.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+F:/TA/HWSEC/Accumulator/Accumulator.srcs/sim_1/new/test.v,1610624367,verilog,,,,test,,,,,,,,
+F:/TA/HWSEC/Accumulator/Accumulator.srcs/sources_1/new/accumulator.v,1610707520,verilog,,F:/TA/HWSEC/Accumulator/Accumulator.srcs/sources_1/new/adder.v,,accumulator,,,,,,,,
+F:/TA/HWSEC/Accumulator/Accumulator.srcs/sources_1/new/adder.v,1610626035,verilog,,F:/TA/HWSEC/Accumulator/Accumulator.srcs/sources_1/new/dff.v,,adder,,,,,,,,
+,,,,,,,,,,,,,,
+F:/TA/HWSEC/Accumulator/Accumulator.srcs/sources_1/new/dff.v,1610621097,verilog,,F:/TA/HWSEC/Accumulator/Accumulator.srcs/sim_1/new/test.v,,dff,,,,,,,,

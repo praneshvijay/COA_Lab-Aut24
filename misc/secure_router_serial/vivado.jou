@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Sep  4 15:41:01 2024
+# Process ID: 8388
+# Current directory: F:/TA/2024_Autumn/secure_router_assignment/secure_router_serial
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4708 F:\TA\2024_Autumn\secure_router_assignment\secure_router_serial\secure_router_serial.xpr
+# Log file: F:/TA/2024_Autumn/secure_router_assignment/secure_router_serial/vivado.log
+# Journal file: F:/TA/2024_Autumn/secure_router_assignment/secure_router_serial\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/TA/2024_Autumn/secure_router_assignment/secure_router_serial/secure_router_serial.xpr
+update_compile_order -fileset sources_1
+file mkdir F:/TA/2024_Autumn/secure_router_assignment/secure_router_serial/secure_router_serial.srcs/constrs_1
+file mkdir F:/TA/2024_Autumn/secure_router_assignment/secure_router_serial/secure_router_serial.srcs/constrs_1/new
+close [ open F:/TA/2024_Autumn/secure_router_assignment/secure_router_serial/secure_router_serial.srcs/constrs_1/new/pin.xdc w ]
+add_files -fileset constrs_1 F:/TA/2024_Autumn/secure_router_assignment/secure_router_serial/secure_router_serial.srcs/constrs_1/new/pin.xdc
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/TA/2024_Autumn/secure_router_assignment/secure_router_serial/secure_router_serial.runs/impl_1/top_level.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/TA/2024_Autumn/secure_router_assignment/secure_router_serial/secure_router_serial.runs/impl_1/top_level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
